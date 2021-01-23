@@ -44,8 +44,7 @@ public class CursoRepositoryTest {
 
         String nomeCurso = "JPA";
         Curso curso = repository.findByNome(nomeCurso);
-        Assert.assertNotNull(curso);
-        Assert.assertEquals(nomeCurso, curso.getNome());
+        Assert.assertNull(curso);
     }
 
 }
